@@ -1,7 +1,6 @@
+import { redirect } from "next/navigation";
+import { ROUTES } from "@/lib/routes";
+
 export default function Home() {
-  return (
-    <div>
-      <h1>Home</h1>
-    </div>
-  );
+  redirect(ROUTES.POSTS);
 }
